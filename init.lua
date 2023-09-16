@@ -17,22 +17,21 @@ return {
     },
   },
 
+  plugins = {
+    {
+      "sainnhe/sonokai",
+      init = function() -- init function runs before the plugin is loaded
+        vim.g.sonokai_style = "espresso"
+      end,
+    },
+  },
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
-  colorscheme = "catppuccin",
-  -- colorscheme = "tokyonight",
+  -- colorscheme = "catppuccin",
   -- colorscheme = "nightfox",
+  colorscheme = "tokyonight-storm",
   
   -- colorscheme = "sonokai",
-  -- plugins = {
-    -- {
-      -- "sainnhe/sonokai",
-      -- init = function() -- init function runs before the plugin is loaded
-        -- vim.g.sonokai_style = "shusia"
-      -- end,
-    -- },
-  -- },
-  
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
